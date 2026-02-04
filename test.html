@@ -2,10 +2,72 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Online Ticket Booking</title>
 </head>
 <body>
-    <h1>hello</h1>
+
+<center><h1>Online Ticket Booking</h1></center>
+
+<form action="http://localhost:5000/submit" method="post">
+
+    <p>
+        <label>Name:</label>
+        <input type="text" name="name" placeholder="Enter your name" required>
+    </p>
+
+    <p>
+        <label>Email:</label>
+        <input type="email" name="email" placeholder="Enter your email" required>
+    </p>
+
+    <p>
+        <label>Ph No:</label>
+        <input type="tel" name="phonenumber" placeholder="Enter your phone number" required>
+    </p>
+
+    <p>
+        <label>Age:</label>
+        <input type="number" name="age" placeholder="Enter your age" required>
+    </p>
+
+    <p>
+        <label>Gender:</label>
+        <input type="radio" name="gender" value="Male" required> Male
+        <input type="radio" name="gender" value="Female"> Female
+        <input type="radio" name="gender" value="Other"> Other
+    </p>
+
+    <p>
+        <label>From:</label>
+        <input type="text" name="fromcityname" placeholder="Enter from city" required>
+    </p>
+
+    <p>
+        <label>To:</label>
+        <input type="text" name="tocityname" placeholder="Enter to city" required>
+    </p>
+
+    <p>
+        <label>Date of Journey:</label>
+        <input type="date" name="journey_date" required>
+    </p>
+
+    <p>
+        <label>Tickets No:</label>
+        <input type="number" name="tickets" placeholder="Enter number of tickets" required>
+    </p>
+
+    <p>
+        <label>Additional Details:</label><br>
+        <textarea name="details" rows="5" cols="40"></textarea>
+    </p>
+
+    <p>
+        <input type="submit" value="Submit">
+        <input type="reset" value="Reset">
+    </p>
+
+</form>
+
 </body>
 </html>
